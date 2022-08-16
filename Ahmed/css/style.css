@@ -1,0 +1,254 @@
+:root {
+	--back-color: #344f5b;
+	--text-color: #f4f4f4;
+    --navcolorhover: #d4ebf5;
+
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+    font-family: 'Cairo';
+}
+
+
+ .show-case {
+    background-color:var(--back-color);
+    color: var(--text-color);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 120px;
+ }
+ 
+.logo{
+    font-weight: 400;
+    font-size:1.8em;
+}
+.fa-thin{
+    display: none;
+}
+header a{
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform:capitalize; 
+}
+.navegation a{
+    font-weight: 100;
+    font-size:1.1em;
+    padding-left: 40px;
+    transition-duration:0.9s ;
+}
+.navegation a:hover{
+    color:var(--navcolorhover);
+}
+.navegation2{
+    display:none;
+    background-color:#f4f4f4;
+    width: 200px;
+    z-index: 1000;
+    transform:translate(-100px,-40px);
+    position: absolute;
+   
+}
+.navegation2 div{
+    height:50px;
+    border-bottom:solid 1px var(--back-color);
+    padding-left: 12px;
+    padding-top:10px;
+}
+.navegation2 hr{
+    
+}
+.navegation2 a{
+    color: var(--back-color);
+    
+}
+
+
+/*First section*/
+
+section.main{
+    padding:100px 200px;
+     width:100%;
+     min-height: 100hv;
+     background-color: rgba(33, 30, 37, 0.932);
+     background-size:cover;
+     background-attachment:fixed;
+     display: grid;
+     grid-template-columns:repeat(2,1fr);
+     align-items: space-around;
+     gap:80px;
+}
+.main-left{
+    padding-top: 40px;
+    width:360.64px;
+   
+}
+.main h1{
+    color:var(--text-color);
+    font-weight:bolder
+ }
+
+ .main .define-p {
+    color:var(--text-color);
+    font-weight: 600;
+    margin-top:10px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    
+}
+
+.main .main-rig{
+    margin:0 40px 0 0; 
+ }
+ .main-rig img{
+    
+    border-radius: 7px;
+    height:100%;
+    width:286.64px;
+    
+}
+/*** Second Section***/
+.cards{
+    padding:55px 55px;
+    width: 100%;
+}
+    
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-size: 3.2em;
+    font-weight: 800;
+    margin-bottom:30px;
+}
+ul {
+    padding-top:40px;
+    margin-left: 250px;
+}
+/*ul .first{
+   padding-top:40px;
+   margin-left: 250px;
+
+}*/
+.first  h1
+{
+    margin-bottom:20px;
+    margin-left: 50px;;
+}
+ul .list{
+    
+    margin-right: 60px;
+    padding: 15px;
+    padding-top: 8px;
+}
+
+/*** Responsive**/
+@media (max-width: 1130px) {
+    .main-rig img{
+        margin-right: -60px;
+    }
+    .show-case {
+        padding: 10px 80px;
+     }
+    .navegation a{
+        
+        font-size:1.1em;
+        padding-left: 20px;
+        transition-duration:0.9s ;
+    }
+}
+@media (max-width: 1000px){
+ .navegation{
+
+    display: none;
+ }
+ .fa-thin{
+    display: block;
+ }
+ .navegation2{
+    padding-right: 60px;
+ }
+ 
+}
+
+@media (max-width: 980px){
+    .show-case {
+        padding-left: 30px;
+     }
+    
+    .logo{
+        font-weight: 400;
+        font-size:1.3em;
+        padding-left: 3px;
+    }
+    section.main{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+    }
+    .main .main-rig{
+        margin:0 0 0 0; 
+     }
+     .main-rig img{
+    
+        border-radius: 7px;
+        height:300px;
+        width:300.64px;
+        }
+    .main-left{
+        margin-top:-50px;
+    } 
+    .main .define-p {
+        color:var(--text-color);
+        font-weight: 600;
+        margin-top:-5px;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+        
+    }  
+    .title{
+        font-size: 3.0em;
+    }
+    ul{
+        margin-left: 5px;
+    }
+    .first  h1{
+    margin-bottom:15px;
+    margin-left: 30px;;
+}
+   ul .list{
+    
+    margin-right: 40px;
+    padding: 10px;
+    padding-top: 4px; 
+}
+
+}
+
+
+   
+ /*
+ .show-case .nav-ul{
+    display:flex;
+    justify-content:start
+ }
+ .nav-ul li{
+    list-style: none;
+ }
+ .nav-ul li a{
+    text-decoration: none;
+    color:var(--text-color);
+ }
+ */
+ 
